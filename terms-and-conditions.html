@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading footer:', error));
+        });
+    </script>   
+    <link rel="icon" type="image/png" href="src/img/logo.png">
+</head>
+<body class="bg-black">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full bg-black/90 backdrop-blur-sm z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="block transform hover:scale-105 transition-transform duration-300">
+                        <img src="src/img/logo.png" alt="Kaedar Logo" class="w-20 sm:w-24 h-auto pt-4">
+                    </a>
+                </div>
+                <a href="index.html" class="text-white hover:text-yellow-400 transition-all duration-300">
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-neutral-900 rounded-xl p-8 shadow-lg">
+                <h1 class="text-3xl font-bold text-yellow-400 mb-8">Terms and Conditions</h1>
+                
+                <div class="space-y-6 text-white/90">
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">1. Agreement to Terms</h2>
+                        <p>By accessing or using services provided by Kaedar Enterprises LLC ("Company", "we", "us", or "our"), you agree to be bound by these Terms and Conditions. If you disagree with any part of these terms, you do not have permission to access our services.</p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">2. Services Description</h2>
+                        <p>We provide workshops, training sessions, and educational content ("Services"). By purchasing or participating in our Services, you acknowledge that:</p>
+                        <ul class="list-disc pl-6 mt-2 space-y-2">
+                            <li>Results from our Services may vary among participants</li>
+                            <li>Success depends on individual effort and implementation</li>
+                            <li>Our Services are for educational and informational purposes only</li>
+                            <li>We reserve the right to modify or discontinue Services without prior notice</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">3. Intellectual Property Rights</h2>
+                        <p>All content, materials, and resources provided through our Services are the intellectual property of Kaedar Enterprises LLC. You agree that:</p>
+                        <ul class="list-disc pl-6 mt-2 space-y-2">
+                            <li>Materials cannot be shared, copied, or distributed without written permission</li>
+                            <li>Recording or reproducing live sessions is strictly prohibited</li>
+                            <li>Access credentials are non-transferable and for personal use only</li>
+                            <li>Violation may result in legal action and immediate service termination</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">4. User Obligations</h2>
+                        <p>As a user of our Services, you agree to:</p>
+                        <ul class="list-disc pl-6 mt-2 space-y-2">
+                            <li>Provide accurate and complete registration information</li>
+                            <li>Maintain the confidentiality of your account credentials</li>
+                            <li>Comply with all applicable laws and regulations</li>
+                            <li>Conduct yourself professionally during sessions</li>
+                            <li>Not disrupt services or interfere with other participants</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">5. Payment and Refunds</h2>
+                        <p>By making a payment, you acknowledge and agree that:</p>
+                        <ul class="list-disc pl-6 mt-2 space-y-2">
+                            <li>All payments are non-refundable under any circumstances</li>
+                            <li>Payments are non-transferable to other individuals or services</li>
+                            <li>We reserve the right to modify pricing without prior notice</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">6. Limitation of Liability</h2>
+                        <p>Kaedar Enterprises LLC shall not be liable for:</p>
+                        <ul class="list-disc pl-6 mt-2 space-y-2">
+                            <li>Any indirect, incidental, or consequential damages</li>
+                            <li>Technical difficulties during live sessions</li>
+                            <li>Personal interpretation or implementation of provided information</li>
+                            <li>Results or outcomes from using our Services</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">7. Privacy and Data Protection</h2>
+                        <p>Your use of our Services is also governed by our Privacy Policy. By agreeing to these Terms, you acknowledge our data collection and usage practices as outlined in our Privacy Policy.</p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">8. Termination</h2>
+                        <p>We reserve the right to:</p>
+                        <ul class="list-disc pl-6 mt-2 space-y-2">
+                            <li>Terminate or suspend access to Services without prior notice</li>
+                            <li>Remove participants who violate these Terms</li>
+                            <li>Deny service to anyone for any reason</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">9. Governing Law</h2>
+                        <p>These Terms shall be governed by and construed in accordance with the laws of the jurisdiction where Kaedar Enterprises LLC is registered, without regard to its conflict of law provisions.</p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">10. Changes to Terms</h2>
+                        <p>We reserve the right to modify these Terms at any time. Changes become effective immediately upon posting to our website. Your continued use of our Services constitutes acceptance of modified Terms.</p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">11. Contact Information</h2>
+                        <p>For questions about these Terms, please contact Kaedar Enterprises LLC at:</p>
+                        <p class="mt-2">Email: support@kclcommunity.com</p>
+                        <p>Address: 163 Parkhouse St., Dallas, Texas, 75207</p>
+                    </section>
+
+                    <section class="mt-8 border-t border-yellow-400/20 pt-6">
+                        <p class="text-sm text-white/70">These Terms and Conditions are effective as of January 5, 2025. By using our Services, you acknowledge that you have read, understood, and agree to be bound by these Terms.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Navbar scroll behavior
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll <= 0) {
+                navbar.style.transform = 'translateY(0)';
+                navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+            } else if (currentScroll > lastScroll) {
+                navbar.style.transform = 'translateY(-100%)';
+            } else {
+                navbar.style.transform = 'translateY(0)';
+                navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.95)';
+            }
+            lastScroll = currentScroll;
+        });
+    </script>
+    <section id="section-4b455069-39a0-412c-ada0-2739d82b46d2">
+        <div id="root">
+            <div id="footer-placeholder"></div>
+            <style>
+                @keyframes fadeInUp {
+                from {
+                opacity: 0;
+                transform: translateY(20px);
+                }
+                to {
+                opacity: 1;
+                transform: translateY(0);
+                }
+                }
+                @keyframes fadeIn {
+                from {
+                opacity: 0;
+                }
+                to {
+                opacity: 1;
+                }
+                }
+                @keyframes scaleX {
+                from {
+                opacity: 0;
+                transform: scaleX(0);
+                }
+                to {
+                opacity: 1;
+                transform: scaleX(1);
+                }
+                }
+             </style>
+          </div>
+       </section>
+    
+</body>
+</html>

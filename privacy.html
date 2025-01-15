@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading footer:', error));
+        });
+    </script>   
+    <link rel="icon" type="image/png" href="src/img/logo.png">
+</head>
+<body class="bg-black">
+    <!-- Reuse the existing navbar structure -->
+    <nav id="navbar" class="fixed w-full bg-black/90 backdrop-blur-sm z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="block transform hover:scale-105 transition-transform duration-300">
+                        <img src="src/img/logo.png" alt="Kaedar Logo" class="w-20 sm:w-24 h-auto pt-4">
+                    </a>
+                </div>
+                <a href="index.html" class="text-white hover:text-yellow-400 transition-all duration-300">
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-neutral-900 rounded-xl p-8 shadow-lg">
+                <h1 class="text-3xl font-bold text-yellow-400 mb-8">Privacy Policy</h1>
+                
+                <div class="space-y-6 text-white/90">
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">1. Introduction</h2>
+                        <p>Welcome to Kaedar Enterprises LLC's Privacy Policy. This document outlines how we collect, use, and protect your personal information when you use our services or visit our website.</p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">2. Information We Collect</h2>
+                        <p>We collect information that you provide directly to us, including:</p>
+                        <ul class="list-disc pl-6 mt-2 space-y-2">
+                            <li>Name and contact information</li>
+                            <li>Payment information</li>
+                            <li>Email communications</li>
+                            <li>Information provided during registration for events or services</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">3. How We Use Your Information</h2>
+                        <p>We use the collected information for:</p>
+                        <ul class="list-disc pl-6 mt-2 space-y-2">
+                            <li>Processing your payments and registrations</li>
+                            <li>Sending important updates about our services</li>
+                            <li>Providing customer support</li>
+                            <li>Improving our services and user experience</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">4. Information Security</h2>
+                        <p>We implement appropriate security measures to protect your personal information. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">5. Sharing Your Information</h2>
+                        <p>We do not sell, trade, or rent your personal information to third parties. We may share your information with service providers who assist us in operating our website and conducting our business.</p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">6. Cookies and Tracking</h2>
+                        <p>We use cookies and similar tracking technologies to improve your browsing experience on our website. You can control cookie settings through your browser preferences.</p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">7. Your Rights</h2>
+                        <p>You have the right to:</p>
+                        <ul class="list-disc pl-6 mt-2 space-y-2">
+                            <li>Access your personal information</li>
+                            <li>Request correction of inaccurate information</li>
+                            <li>Request deletion of your information</li>
+                            <li>Opt-out of marketing communications</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">8. Contact Us</h2>
+                        <p>If you have questions about this Privacy Policy, please contact Kaedar Enterprises LLC at:</p>
+                        <p class="mt-2">Email: support@kclcommunity.com</p>
+                        <p>Address: 163 Parkhouse St., Dallas, Texas, 75207</p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">9. Updates to This Policy</h2>
+                        <p>We may update this Privacy Policy from time to time. The latest version will be posted on this page with the effective date.</p>
+                        <p class="mt-4">Last updated: January 5, 2025</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Navbar scroll behavior
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll <= 0) {
+                navbar.style.transform = 'translateY(0)';
+                navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+            } else if (currentScroll > lastScroll) {
+                navbar.style.transform = 'translateY(-100%)';
+            } else {
+                navbar.style.transform = 'translateY(0)';
+                navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.95)';
+            }
+            lastScroll = currentScroll;
+        });
+    </script>
+        <section id="section-4b455069-39a0-412c-ada0-2739d82b46d2">
+            <div id="root">
+                <div id="footer-placeholder"></div>
+                <style>
+                    @keyframes fadeInUp {
+                    from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                    }
+                    to {
+                    opacity: 1;
+                    transform: translateY(0);
+                    }
+                    }
+                    @keyframes fadeIn {
+                    from {
+                    opacity: 0;
+                    }
+                    to {
+                    opacity: 1;
+                    }
+                    }
+                    @keyframes scaleX {
+                    from {
+                    opacity: 0;
+                    transform: scaleX(0);
+                    }
+                    to {
+                    opacity: 1;
+                    transform: scaleX(1);
+                    }
+                    }
+                 </style>
+              </div>
+           </section>
+    
+</body>
+</html>

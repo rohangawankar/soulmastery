@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund Policy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading footer:', error));
+        });
+    </script>   
+    <link rel="icon" type="image/png" href="src/img/logo.png">
+</head>
+<body class="bg-black">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full bg-black/90 backdrop-blur-sm z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="block transform hover:scale-105 transition-transform duration-300">
+                        <img src="src/img/logo.png" alt="Kaedar Logo" class="w-20 sm:w-24 h-auto pt-4">
+                    </a>
+                </div>
+                <a href="index.html" class="text-white hover:text-yellow-400 transition-all duration-300">
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-neutral-900 rounded-xl p-8 shadow-lg">
+                <h1 class="text-3xl font-bold text-yellow-400 mb-8">Refund Policy</h1>
+                
+                <div class="space-y-6 text-white/90">
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">1. Non-Refundable Payment Policy</h2>
+                        <p>At Kaedar Enterprises LLC, all payments made for workshops, training sessions, and events are strictly non-refundable under any circumstances. This includes, but is not limited to:</p>
+                        <ul class="list-disc pl-6 mt-2 space-y-2">
+                            <li>Unable to attend due to scheduling conflicts</li>
+                            <li>Technical difficulties during live sessions</li>
+                            <li>Personal emergencies</li>
+                            <li>Change of mind</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">2. Access to Missed Sessions</h2>
+                        <p>For participants who miss the live session:</p>
+                        <ul class="list-disc pl-6 mt-2 space-y-2">
+                            <li>Recordings of missed sessions will be available after the live event.</li>
+                            <li>Access details and duration will be provided after the session.</li> 
+                            <li>Sharing or distributing recordings is strictly prohibited.</li>
+                        </ul>
+                    </section>
+                    
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">3. Payment Confirmation</h2>
+                        <p>Upon completing your payment:</p>
+                        <ul class="list-disc pl-6 mt-2 space-y-2">
+                            <li>You acknowledge and agree to our non-refundable payment policy</li>
+                            <li>You understand that recordings of missed sessions will be provided.</li> 
+                            <li>You accept that all fees paid are final and non-transferable</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-yellow-400 mb-4">4. Contact Information</h2>
+                        <p>For questions about our refund policy or recording access, please contact Kaedar Enterprises LLC at:</p>
+                        <p class="mt-2">Email: support@kclcommunity.com</p>
+                        <p>Address: 163 Parkhouse St., Dallas, Texas, 75207</p>
+                    </section>
+
+                    <section class="mt-8 border-t border-yellow-400/20 pt-6">
+                        <p class="text-sm text-white/70">This refund policy is effective as of January 5, 2025, and applies to all purchases made from Kaedar Enterprises LLC. We reserve the right to modify this policy at any time without prior notice. The latest version will always be posted on this page.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Navbar scroll behavior
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll <= 0) {
+                navbar.style.transform = 'translateY(0)';
+                navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+            } else if (currentScroll > lastScroll) {
+                navbar.style.transform = 'translateY(-100%)';
+            } else {
+                navbar.style.transform = 'translateY(0)';
+                navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.95)';
+            }
+            lastScroll = currentScroll;
+        });
+    </script>
+        <section id="section-4b455069-39a0-412c-ada0-2739d82b46d2">
+            <div id="root">
+                <div id="footer-placeholder"></div>
+                <style>
+                    @keyframes fadeInUp {
+                    from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                    }
+                    to {
+                    opacity: 1;
+                    transform: translateY(0);
+                    }
+                    }
+                    @keyframes fadeIn {
+                    from {
+                    opacity: 0;
+                    }
+                    to {
+                    opacity: 1;
+                    }
+                    }
+                    @keyframes scaleX {
+                    from {
+                    opacity: 0;
+                    transform: scaleX(0);
+                    }
+                    to {
+                    opacity: 1;
+                    transform: scaleX(1);
+                    }
+                    }
+                 </style>
+              </div>
+           </section>
+    
+</body>
+</html>
