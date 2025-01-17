@@ -426,10 +426,10 @@
             <div id="root">
                <section id="hero" class="min-h-[70vh] bg-neutral-900 text-white pt-20 flex items-center justify-center overflow-hidden">
                   <!-- Background Pattern -->
-                  <div class="absolute inset-0 opacity-10">
+                  <!-- <div class="absolute inset-0 opacity-10">
                      <div class="absolute inset-0 bg-gradient-to-b from-yellow-500/20 to-blue-500/20"></div>
                      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0); background-size: 40px 40px;"></div>
-                  </div>
+                  </div> -->
                   <!-- Content Container -->
                   <div class="relative z-10 min-h-screen flex items-center container mx-auto px-4" id="el-hbe6kv3j">
                     <div class="max-w-5xl mx-auto text-center" id="el-qktga8t1">
@@ -445,11 +445,11 @@
                    </h1>
 
                       <h5 class="text-xl md:text-3xl font-bold text-white mb-8 leading-tight animate__animated animate__fadeInUp bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-600" id="el-bz56ba4h">
-                        Soul Transformation Mastery Bootcamp
+                        Soul Transformation Masterclass
                       </h5>
                       
                       <p class="text-xl md:text-2xl text-neutral-300 mb-12 leading-relaxed mx-auto max-w-4xl animate__animated animate__fadeInUp animate__delay-1s" id="el-z7o81evi">
-                        For dedicated practitioners ready to advance: Experience higher-level Kemetic wisdom, sacred initiations, and transformative teachings in this exclusive <br> 4-day mastery bootcamp. Step into your role as a spiritual guide and healer
+                        For dedicated practitioners ready to advance: Experience higher-level Kemetic wisdom, sacred initiations, and transformative teachings in this exclusive <br> 4-day masterclass. Step into your role as a spiritual mentor and healer
                       </p>
                   
                       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-neutral-300 mt-16 animate__animated animate__fadeInUp animate__delay-2s" id="el-q90xw1dy">
@@ -475,6 +475,38 @@
                   </div>
 
                </section>
+              
+              
+              
+              
+              <script>
+                  // Set the date we're counting down to
+                  const countDownDate = new Date("Jan 30, 2025 11:00:00 CST").getTime();
+              
+                  // Update the countdown every 1 second
+                  const x = setInterval(function() {
+                      const now = new Date().getTime();
+                      const distance = countDownDate - now;
+              
+                      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+              
+                      document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+                      document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+                      document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+                      document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+              
+                      if (distance < 0) {
+                          clearInterval(x);
+                          document.getElementById("days").innerHTML = "00";
+                          document.getElementById("hours").innerHTML = "00";
+                          document.getElementById("minutes").innerHTML = "00";
+                          document.getElementById("seconds").innerHTML = "00";
+                      }
+                  }, 1000);
+              </script>
                <script>
                   // Add scroll animation for parallax effect
                   window.addEventListener('scroll', () => {
