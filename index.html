@@ -476,55 +476,108 @@
       </element>
       <element id="0be506ba-cc2b-421e-8dd9-c4e63094b574" data-section-id="0be506ba-cc2b-421e-8dd9-c4e63094b574">
         <!-- Hero Section -->
-<section id="hero" class="relative bg-neutral-900 overflow-hidden pt-16">
-   <div class="relative w-full">
-       <div class="relative min-h-screen flex items-center justify-center">
-           <!-- Background effects -->
-           <div class="absolute inset-0 bg-neutral-900 bg-[url('/noise.png')] opacity-20"></div>
-           
-           <!-- Main content container -->
-           <div class="container mx-auto px-4 py-8 md:py-16 relative z-10 bg-neutral-900">
-               <div class="max-w-4xl mx-auto text-center">
-                   <!-- Event date badge -->
-                   <div class="inline-block mb-4 md:mb-6 bg-yellow-400/10 backdrop-blur-sm px-4 md:px-6 py-2 rounded-full">
-                       <span class="text-yellow-200 font-medium text-sm md:text-base">February 1st & 2nd, 2024</span>
-                   </div>
-                   
-                   <!-- Main heading -->
-                   <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-8 bg-gradient-to-r from-yellow-200 via-yellow-300 to-white text-transparent bg-clip-text">
-                       Soul Transformation Masterclass
-                   </h1>
-                   
-                   <!-- Subheading -->
-                   <p class="text-lg sm:text-xl md:text-2xl text-yellow-100 mb-6 md:mb-12">
-                       Embark on a Journey to Unlock Your Higher Self
-                   </p>
-                   
-                   <!-- Description -->
-                   <p class="text-base sm:text-lg md:text-xl text-neutral-300 mb-8 leading-relaxed mx-auto max-w-4xl animate__animated animate__fadeInUp animate__delay-1s">
-                       For dedicated practitioners ready to advance: Experience higher-level Kemetic wisdom, sacred initiations, and transformative teachings in this exclusive 2-day masterclass. <br class="hidden sm:block"> Step into your role as a spiritual mentor and healer.
-                   </p>
-                   
-                   <!-- Transformation outcomes -->
-                   <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mb-8 md:mb-12 text-left">
-                       <div class="bg-yellow-400/5 backdrop-blur-sm p-4 md:p-6 rounded-xl border border-yellow-400/20">
-                           <h3 class="text-lg md:text-xl font-semibold text-yellow-300 mb-2 md:mb-3">Spiritual Mastery</h3>
-                           <p class="text-sm md:text-base text-gray-300">Develop deep connection with your inner wisdom and spiritual guidance</p>
-                       </div>
-                       <div class="bg-yellow-400/5 backdrop-blur-sm p-4 md:p-6 rounded-xl border border-yellow-400/20">
-                           <h3 class="text-lg md:text-xl font-semibold text-yellow-300 mb-2 md:mb-3">Emotional Freedom</h3>
-                           <p class="text-sm md:text-base text-gray-300">Release limiting beliefs and transform negative patterns into positive energy</p>
-                       </div>
-                       <div class="bg-yellow-400/5 backdrop-blur-sm p-4 md:p-6 rounded-xl border border-yellow-400/20">
-                           <h3 class="text-lg md:text-xl font-semibold text-yellow-300 mb-2 md:mb-3">Life Purpose</h3>
-                           <p class="text-sm md:text-base text-gray-300">Discover your authentic path and manifest your highest potential</p>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </div>
-</section>
+        <section id="hero" class="relative bg-neutral-900 overflow-hidden"> <div class="relative w-full">
+         <div class="relative min-h-screen flex items-center justify-center">
+             <div class="absolute inset-0 bg-neutral-900 bg-[url('/noise.png')] opacity-20"></div>
+ 
+             <div class="container mx-auto px-4 py-8 md:py-16 relative z-10 bg-neutral-900">
+                 <div class="max-w-4xl mx-auto text-center">
+ 
+                     <div class="inline-block mb-4 md:mb-6 bg-yellow-400/10 backdrop-blur-sm px-4 md:px-6 py-2 rounded-full">
+                         <span class="text-yellow-200 font-medium text-sm md:text-base">February 1st & 2nd, 2024</span>
+                     </div>
+ 
+                     <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-8 bg-gradient-to-r from-yellow-200 via-yellow-300 to-white text-transparent bg-clip-text">
+                         Soul Transformation Masterclass
+                     </h1>
+ 
+                     <p class="text-lg sm:text-xl md:text-2xl text-yellow-100 mb-6 md:mb-12">
+                         Embark on a Journey to Unlock Your Higher Self
+                     </p>
+ 
+                     <div class="mb-8 relative">
+                        <button id="play-video" class="bg-yellow-400/20 backdrop-blur-sm p-3 rounded-full hover:bg-yellow-400/30 focus:outline-none focus:ring-2 focus:ring-yellow-400 animate-zoomInOut">
+                          <svg class="w-8 h-8 text-yellow-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                          </svg>
+                        </button>
+                      
+                        <div id="video-modal" class="fixed top-0 left-0 w-full h-full z-50 hidden flex items-center justify-center bg-black bg-opacity-80">
+                              <div class="relative bg-white p-4 rounded-lg w-full max-w-6xl mx-auto max-h-[90vh] overflow-y-auto">
+                                  <button id="close-video" class="absolute top-2 right-2 z-50 p-2 rounded-full hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-400">
+                                      <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                      </svg>
+                                  </button>
+                                  <div class="relative pb-[56.25%] pt-0 h-0 overflow-hidden">
+                                      <iframe id="video-iframe" src="" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+ 
+                     <p class="text-base sm:text-lg md:text-xl text-neutral-300 mb-8 leading-relaxed mx-auto max-w-4xl animate__animated animate__fadeInUp animate__delay-1s">
+                         For dedicated practitioners ready to advance: Experience higher-level Kemetic wisdom, sacred initiations, and transformative teachings in this exclusive 2-day masterclass. <br class="hidden sm:block"> Step into your role as a spiritual mentor and healer.
+                     </p>
+ 
+                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mb-8 md:mb-12 text-left">
+                         <div class="bg-yellow-400/5 backdrop-blur-sm p-4 md:p-6 rounded-xl border border-yellow-400/20">
+                             <h3 class="text-lg md:text-xl font-semibold text-yellow-300 mb-2 md:mb-3">Spiritual Mastery</h3>
+                             <p class="text-sm md:text-base text-gray-300">Develop deep connection with your inner wisdom and spiritual guidance</p>
+                         </div>
+                         <div class="bg-yellow-400/5 backdrop-blur-sm p-4 md:p-6 rounded-xl border border-yellow-400/20">
+                             <h3 class="text-lg md:text-xl font-semibold text-yellow-300 mb-2 md:mb-3">Emotional Freedom</h3>
+                             <p class="text-sm md:text-base text-gray-300">Release limiting beliefs and transform negative patterns into positive energy</p>
+                         </div>
+                         <div class="bg-yellow-400/5 backdrop-blur-sm p-4 md:p-6 rounded-xl border border-yellow-400/20">
+                             <h3 class="text-lg md:text-xl font-semibold text-yellow-300 mb-2 md:mb-3">Life Purpose</h3>
+                             <p class="text-sm md:text-base text-gray-300">Discover your authentic path and manifest your highest potential</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+ 
+ <style>
+     .animate-zoomInOut {
+         animation: zoomInOut 3s ease-in-out infinite;
+     }
+ 
+     @keyframes zoomInOut {
+         0% {
+             transform: scale(1);
+         }
+         50% {
+             transform: scale(2);
+         }
+         100% {
+             transform: scale(1);
+         }
+     }
+ </style>
+ 
+ <script>
+     const playButton = document.getElementById('play-video');
+     const videoModal = document.getElementById('video-modal');
+     const closeButton = document.getElementById('close-video');
+     const videoIframe = document.getElementById('video-iframe');
+ 
+     // Replace with your actual video URL
+     const videoUrl = 'src/video/soul_transformation.mp4';
+ 
+     playButton.addEventListener('click', () => {
+         videoIframe.src = videoUrl;
+         videoModal.classList.remove('hidden');
+     });
+ 
+     closeButton.addEventListener('click', () => {
+         videoIframe.src = ''; // Stop the video
+         videoModal.classList.add('hidden');
+     });
+ </script>
 
 <!-- Features Section -->
 <section id="features" class="py-12 md:py-20 bg-neutral-800">
